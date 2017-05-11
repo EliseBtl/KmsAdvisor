@@ -1,0 +1,113 @@
+<%= render 'layouts/header' %>
+
+<div class="left">
+<div class="ui column grid">
+<div class="ui people shape">
+  		<div class="sides">
+    		<div class="active side">
+      			<div class="ui card">
+        			<div class="image">
+        			</div>
+        			<div class="content">
+          			<div class="header"><%= @man.name %>	
+          			</div>
+          			<div class="meta">
+            			<a>Profil et caractère</a>
+          			</div>
+          			<div class="description"><%= @man.description %></div>
+        		</div>
+        		<div class="extra content">
+          		<span class="right floated">
+            	Joined in 2017
+          		</span>
+          		<span>
+            	<i class="user icon"></i>
+            	3 Ex l'ont notés
+          		</span>
+        		</div>
+      		</div>
+    	</div>
+    	<div class="side">
+     	<div class="ui card">
+        	<div class="image">
+          		<img src="/images/avatar/large/stevie.jpg">
+        	</div>
+        	<div class="content">
+        	<a class="header">Stevie Feliciano</a>
+         	<div class="meta">
+            <span class="date">Joined in 2014</span>
+          	</div>
+          	<div class="description">
+            Stevie Feliciano is a library scientist living in New York City. She likes to spend her time reading, running, and writing.
+          	</div>
+        </div>
+        <div class="extra content">
+          <a><i class="user icon"></i>
+            22 Friends
+          </a>
+        </div>
+      	</div>
+    	</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="right">
+	<div id="notation">
+		<div class="ui segment">
+	  <div class="ui relaxed divided list">
+	    <div class="item">
+	      <div class="content">
+	        <div class="header">Vous a-t-il trompé?</div>
+	        Jamais
+	      </div>
+	    </div>
+	    <div class="item">
+	      <div class="content">
+	        <div class="header">Est-il Pervers narcissique?</div>
+	        Je ne crois pas
+	      </div>
+	    </div>
+	    <div class="item">
+	      <div class="content">
+	        <div class="header">Vous a-t-il moralement atteint?</div>
+	        Oui
+	      </div>
+	    </div>
+	    <div class="item">
+	      <div class="content">
+	        <div class="header">Vous a-t-il tapé?</div>
+	        Jamais
+	      </div>
+	    </div>
+	    <div class="item">
+	      <div class="content">
+	        <div class="header">Est-il méchant?</div>
+	        Non
+	      </div>
+	    </div>
+	    <div class="item">
+	      <div class="content">
+	        <div class="header">Pourquoi avez-vous rompu?</div>
+	        Car il a trop d'orgueil et de fierté
+	      </div>
+	    </div>
+	  </div>
+		</div>	
+	</div>
+	<div id="level_connard">
+		<p>Niveau de Saloperie:</p>
+		<div class="ui progress">
+	  		<div class="bar" style="transition-duration: 300ms; width: 20%">
+	    	<div class="progress">20%</div>
+	  		</div>
+		</div>
+	</div>
+
+<!--COMMENT-->
+<%= render 'comments/form' %>
+
+<h3>Comments <% @man.comments %></h3>
+<%= render partial: 'comment', collection: @man.comments %>
+

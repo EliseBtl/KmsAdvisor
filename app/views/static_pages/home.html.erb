@@ -1,0 +1,17 @@
+<%= render 'layouts/header' %>
+
+<div id="image_fond"></div>
+<div>
+	<p id="brutal">Fini les malotrus avec<br> KeumAdvisor</p>
+</div>
+
+<!-- Login with Facebook -->
+
+
+<button id="login_facebook">
+<% if current_user.present? %>
+  Welcome <%= current_user.name %>!
+<% else %>
+  <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, class: "text_facebook" %>
+<% end %>
+</button>

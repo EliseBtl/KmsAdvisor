@@ -1,0 +1,5 @@
+<%= simple_form_for [@man, @man.comments.build], html: { class: "ui reply form"} do |f| %>
+  <%= f.input :content %>
+  <%= f.button :submit %>
+<% end %>
+

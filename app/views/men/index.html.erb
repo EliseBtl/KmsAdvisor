@@ -1,0 +1,32 @@
+<%= render 'layouts/header' %>
+
+<div id="top">
+  <h1><a id="creme">Le Top 10 des salopards 😱 </a></h1>
+
+<h2>Trouve un Keum</h1>
+<%= render 'form_search' %>
+
+  <div id="top_connards">
+    <div class="ui five column grid">
+    <% @men.each do |man| %>
+        <div class="column">
+          <div class="ui segment">
+            <%= man.name %>
+            <%= man.description %>
+            <a href="/men/<%= man.id %>">Check sa page !! 😶</a>
+          </div>
+        </div>
+        <%end%>
+    </div>
+  </div>
+</div>
+
+<%= paginate @men %>
+
+
+
+
+
+
+
+

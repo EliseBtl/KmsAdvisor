@@ -1,0 +1,11 @@
+<%= render 'layouts/header' %>
+
+<%= simple_form_for(@man) do |f| %>
+  <%= f.input :name, label: 'nom du keum' %>
+  <%= f.input :description, as: :text %>
+
+  <%= f.button :submit %>
+<% end %>
+
+
+

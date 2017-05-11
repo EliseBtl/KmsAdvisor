@@ -1,0 +1,10 @@
+<div id="chercher_moi">
+<div class="ui fluid action input" >
+  <%= form_tag men_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+  </p>
+<% end %>
+  <div class="ui button">Chercher</div>
+</div>
+</div>

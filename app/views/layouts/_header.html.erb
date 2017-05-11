@@ -1,0 +1,28 @@
+<div class="ui menu">
+   <%= link_to "Keum Advisor", root_path, class: "header item" %>
+   <%= link_to "Qui sommes nous?", about_path, class: "item" %>
+   <%= link_to "Chercher un Keum", men_path, class: "item" %>
+   <%= link_to "Note ton ex !", new_man_path, class: "item" %>
+
+   <%= link_to "S'inscrire par mail", new_user_registration_path, class: "item" %>
+   <%= link_to "Se connecter", new_user_session_path, class: "item" %>
+      <% if current_user.present? %>
+       👍
+         <div class="item"><%= link_to destroy_user_session_path, method: :delete do %>
+            <%= t(".sign_out", default: "Se déconnecter") %>
+            <% end %>
+         </div>
+
+      <% else %>
+      👎
+      <% end %>
+
+
+   <%= link_to "Mon profile 👸 ", profile_path, class: "item" %>
+</div>
+
+
+
+
+    
+
