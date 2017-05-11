@@ -14,6 +14,11 @@
           			<div class="meta">
             			<a>Profil et caractère</a>
           			</div>
+
+          			<% if can? :destroy, @man %>
+          				<%= link_to 'Destroy', @man, method: :delete, data: { confirm: 'Es-tu sûr de vouloir supprimer cette fiche ? 😱'} %>
+          			<% end %>
+
           			<div class="description"><%= @man.description %></div>
         		</div>
         		<div class="extra content">

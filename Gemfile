@@ -29,6 +29,7 @@ gem 'devise'
 gem 'kaminari'
 gem 'cells-rails'
 gem 'pg'
+gem 'cancancan', '~> 1.10'
 
 group :development, :test do
   gem 'sqlite3', '1.3.12'
