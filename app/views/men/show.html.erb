@@ -1,3 +1,5 @@
+<%= cloudinary_js_config %> 
+
 <%= render 'layouts/header' %>
 
 <div class="left">
@@ -11,13 +13,8 @@
         			<div class="content">
           			<div class="header"><%= @man.name %>	
           			</div>
-          			<div class="meta">
-            			<a>Profil et caractère</a>
-          			</div>
-
-          			<% if can? :destroy, @man %>
-          				<%= link_to 'Destroy', @man, method: :delete, data: { confirm: 'Es-tu sûr de vouloir supprimer cette fiche ? 😱'} %>
-          			<% end %>
+          			<% unless @man.avatar_url.nil? %><%= image_tag @man.avatar_url %><br /><% end %>
+          			<%= link_to 'Destroy', @man, method: :delete, data: { confirm: 'Es-tu sûr de vouloir supprimer cette fiche ? 😱'} %>
 
           			<div class="description"><%= @man.description %></div>
         		</div>

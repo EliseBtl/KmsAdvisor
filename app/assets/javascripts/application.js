@@ -17,6 +17,7 @@
 // Loads all Semantic javascripts
 //= require semantic-ui
 //= require_tree .
+//= require cloudinary
 
 $(document).reday(function(){	
 

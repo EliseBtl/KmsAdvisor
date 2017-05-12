@@ -1,8 +1,13 @@
 <%= render 'layouts/header' %>
 
-<%= simple_form_for(@man) do |f| %>
-  <%= f.input :name, label: 'nom du keum' %>
-  <%= f.input :description, as: :text %>
+<%= simple_form_for(@man, html: { multipart: true }) do |f| %>
+	<%= f.label :avatar %><br>
+	<%= f.file_field :avatar %>
+
+	<%= f.input :name, label: 'Nom de ton ex' %>
+	<%= f.input :description, as: :text %>
+
+	<%= f.input :note, collection: 1..20, prompt: "Note ton ex sur 20 (20 étant la note de l'ultime malotrus!)", selected: 21 %>
 
   <%= f.button :submit %>
 <% end %>

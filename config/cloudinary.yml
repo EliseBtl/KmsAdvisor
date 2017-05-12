@@ -1,0 +1,9 @@
+development:
+  cloud_name: "sample"
+  api_key: "987463165932748"
+  api_secret: "JlSwWZnHJ27nK90hAqM3N2POAXE"
+
+production:
+  cloud_name: "sample"
+  api_key: "987463165932748"
+  api_secret: "JlSwWZnHJ27nK90hAqM3N2POAXE"

@@ -17,6 +17,7 @@ class MenController < ApplicationController
   def create
     #@man = Man.new(man_params)
     @man = current_user.men.build(man_params)
+    @man.avatar = params[:file]
     if @man.save
       flash[:success] = "Cool tu as noté ton ex 👍 😈 !"
       redirect_to man_path(@man)
@@ -54,7 +55,7 @@ class MenController < ApplicationController
 private 
 
 	def man_params
-		params.require(:man).permit(:name, :description)
+		params.require(:man).permit(:name, :description, :note, {avatar: []})
 	end
 
    # Confirms the correct user.
