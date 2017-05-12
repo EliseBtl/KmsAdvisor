@@ -1,8 +1,9 @@
 <%= render 'layouts/header' %>
 
 <%= simple_form_for(@man, html: { multipart: true }) do |f| %>
-	<%= f.label :avatar %><br>
-	<%= f.file_field :avatar %>
+
+	<%= #f.label :avatar %>
+	<%= #f.file_field :avatar %>
 
 	<%= f.input :name, label: 'Nom de ton ex' %>
 	<%= f.input :description, as: :text %>
