@@ -3,21 +3,25 @@
 <div id="texte_presentation">
 	<h4 class="ui horizontal divider header">Note ton ex !</h4>
 </div>
-			<div class="block">
-				<div class="form">
-					<%= simple_form_for(@man, html: { multipart: true }) do |f| %>
 
-					<%= f.label :avatar, label: 'Sa photo' %>
-					<%= f.file_field :avatar %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+		<%= simple_form_for(@man, html: { multipart: true }) do |f| %>
 
-					<%= f.input :name, label: 'Nom de ton ex', input_html: {id: "email"} %>
-					<%= f.input :description, as: :text %>
+		<%= f.label :avatar, label: 'Sa photo' %>
+		<%= f.file_field :avatar %>
 
-					<%= f.input :note, collection: 1..20, prompt: "Note ton ex sur 20 (20 étant la note de l'ultime malotrus!)", selected: 21 %>
+		<%= f.input :name, label: 'Nom de ton ex', input_html: {id: "email"} %>
+		<%= f.input :description, as: :text %>
 
-				  	<%= f.button :submit %>
-				  	<% end%>
-				</div>
-			</div>
+		<%= f.input :note, collection: 1..20, prompt: "Note ton ex sur 20 (20 étant la note de l'ultime malotrus!)", selected: 21 %>
+
+		<%= f.button :submit %>
+		<% end%>
+	</div>
+  </div>
+</div>
+
 
 
