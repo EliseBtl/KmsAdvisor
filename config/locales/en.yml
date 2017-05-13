@@ -20,5 +20,5 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 en:
   gender_lists:
-      "Male": Male
-      "Female": Female
+      "Homme": Homme
+      "Femme": Femme

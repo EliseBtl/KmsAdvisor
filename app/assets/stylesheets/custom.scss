@@ -13,7 +13,124 @@ html, body #contenu{
 
 }
 
+.Welcome_home {
+	color: #22B4FF;
+	font-size: 2vw;
+	display: inline-block;
+  	vertical-align: middle;
+  	line-height: normal;
+  	display: block;
+	width: 35vw;
+	height: 5vw;
+	margin: 0 auto;
+	margin-top: 20%;
+	text-align: center;
+	border: 0px;
+	align-self: center; 
+}
+
 @media screen and (max-width: 2500px) {
+
+/* Note ton keum form */
+* {
+	font-family: Avenir; 
+}
+
+header {
+	background-color: white; 
+	width: 845px;
+	height: 100px;
+	margin: auto; 
+	padding: 12px; 
+}
+
+header table {
+	border-collapse: collapse;
+	border-style: hidden;
+	float: right;
+	margin-top: 58px; 
+}
+
+th, 
+td {
+	border: 1px solid #cecfd5;
+	padding: 8px 10px;
+}
+
+.block {
+	background-color: white;
+	width: 765px;
+	margin: auto;
+	height: 100%; 
+	padding: 43px 50px 50px 50px; 
+	border-radius: 2px;
+	box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2)
+}
+
+p {
+	font-size: 10px; 
+}
+
+.form {
+	width: 415px; 
+	display: inline-block;
+}
+
+h1 {
+	font-weight: normal;
+}
+
+form {
+  border-radius: 5px;
+  width: 240px;
+}
+
+input[type="email"], input[type="tel"], input[type="password"] {
+    width:290px; 
+    height:25px; 
+    line-height:39px;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+}
+
+.fsSubmitButton {
+	font-size: 18px;
+	background-color: #45cae6;
+	color: #ffffff;
+	border-radius: 1px;
+	border: 1px solid #57D6C7;
+	cursor: pointer;
+	width: 133px; 
+	height: 36px; 
+	text-align: center;
+}
+
+.int-box {
+	background-color: #ccced5;
+	width: 1px;
+	height: 600px;
+	display: inline-block;
+	margin-left: 545px; 
+	margin-top: -580px; 
+}
+
+.aside {
+	font-size: 13px;
+	float: right;
+	background-color: #f5f5f5; 
+	padding: 10px;
+	width: 180px; 
+	height: 439px;
+	display: inline-block;
+	margin-top: -580px;
+}
+
+.error-message {
+	color: #f24965;
+	font-size: 12px;
+}
+
+/* all */
 
 #image_fond {
 	background-image: url('https://oblikon.net/wp-content/uploads/bons-baisers-de-russie-1963-15-g.jpg');

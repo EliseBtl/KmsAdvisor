@@ -7,11 +7,13 @@
 
 <!-- Login with Facebook -->
 
-
-<button id="login_facebook">
 <% if current_user.present? %>
+<div class="Welcome_home">
   Welcome <%= current_user.name %>!
+</div>
+
 <% else %>
+<button id="login_facebook">
   <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, class: "text_facebook" %>
 <% end %>
 </button>
