@@ -9,8 +9,8 @@
     <div class="col-sm-4 col-sm-offset-4">
 		<%= simple_form_for(@man, html: { multipart: true }) do |f| %>
 
-		<%= f.label :avatar, label: 'Sa photo' %>
-		<%= f.file_field :avatar %>
+			<!--f.label :avatar, label: 'Sa photo'
+			f.file_field :avatar -->
 
 		<%= f.input :name, label: 'Nom de ton ex', input_html: {id: "email"} %>
 		<%= f.input :description, as: :text %>
