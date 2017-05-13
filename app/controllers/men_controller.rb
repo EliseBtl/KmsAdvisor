@@ -15,7 +15,7 @@ class MenController < ApplicationController
   end
 
   def create
-    @man = Man.new(man_params)
+    #@man = Man.new(man_params)
     @man = current_user.men.build(man_params)
     @man.avatar = params[:file]
     if @man.save
